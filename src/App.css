@@ -1,0 +1,58 @@
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+header > img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.offre {
+  width: 250px;
+  height: 365px;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  height: 50vh;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.signup-form input {
+  border-radius: 5px;
+  width: 50%;
+  height: 20px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.publish-picture {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
