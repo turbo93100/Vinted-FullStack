@@ -44,7 +44,9 @@ export default function CheckoutForm() {
       }
 
       // si pas d'erreur on fait une intention de paiement via notre back end (sécurisé) =>
-      const response = await axios.post("http://localhost:4000/payment");
+      const response = await axios.post(
+        "https://lereacteur-vinted-api.herokuapp.com/v2/payment"
+      );
 
       //   console.log(response.data.client_secret);
       // on stock dans une variable ce client secret =>

@@ -1,3 +1,4 @@
+/* App */
 .container {
   width: 1080px;
   margin: 0 auto;
@@ -8,6 +9,7 @@ header > img {
   margin-top: 20px;
 }
 
+/* Offer */
 .avatar {
   width: 40px;
   object-fit: cover;
@@ -20,6 +22,7 @@ header > img {
   object-fit: cover;
 }
 
+/* SignUp */
 form {
   display: flex;
   flex-direction: column;
