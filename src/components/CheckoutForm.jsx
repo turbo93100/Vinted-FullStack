@@ -3,7 +3,7 @@ import { useStripe, useElements } from "@stripe/react-stripe-js";
 import { useState } from "react";
 import axios from "axios";
 
-export default function CheckoutForm() {
+export default function CheckoutForm({ title, price }) {
   // state de gestion de message d'erreur
   const [errorMessage, setErrorMessage] = useState("");
   // state qui indique si le paiement est un succès ou pas
@@ -45,7 +45,11 @@ export default function CheckoutForm() {
 
       // si pas d'erreur on fait une intention de paiement via notre back end (sécurisé) =>
       const response = await axios.post(
-        "https://lereacteur-vinted-api.herokuapp.com/v2/payment"
+        "https://lereacteur-vinted-api.herokuapp.com/v2/payment",
+        {
+          title: title,
+          amount: price,
+        }
       );
 
       //   console.log(response.data.client_secret);
